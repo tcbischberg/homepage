@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  flex-direction: column;
+
+  padding-inline: var(--size-fluid-2);
+}
+
+main {
+  flex-grow: 1;
+}
+
+.content--title-center {
+  text-align: center;
+}
+
+.sponsors--card-shadow {
+  box-shadow: var(--shadow-4);
+}
+
+.sponsors--card-rounded {
+  border-radius: var(--radius-3);
+}
+
+.footer--separator-padding {
+  padding-inline: 0.5rem;
+}

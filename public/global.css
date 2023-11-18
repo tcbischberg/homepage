@@ -1,0 +1,141 @@
+html {
+  --brand-purple: #4b4bff;
+
+  --text-1-purple: var(--purple-9);
+  --text-2-purple: var(--purple-7);
+
+  --surface-1-purple: var(--purple-0);
+  --surface-2-purple: var(--purple-1);
+  --surface-3-purple: var(--purple-2);
+  --surface-4-purple: var(--purple-3);
+}
+
+html {
+  --brand-dim: #4b4bff;
+
+  --text-1-dim: var(--gray-3);
+  --text-2-dim: var(--gray-4);
+
+  --surface-1-dim: var(--gray-8);
+  --surface-2-dim: var(--gray-7);
+  --surface-3-dim: var(--gray-6);
+  --surface-4-dim: var(--gray-5);
+}
+
+html {
+  --brand-dark: #4b4bff;
+
+  --text-1-dark: var(--gray-3);
+  --text-2-dark: var(--gray-5);
+
+  --surface-1-dark: var(--gray-12);
+  --surface-2-dark: var(--gray-11);
+  --surface-3-dark: var(--gray-10);
+  --surface-4-dark: var(--gray-9);
+}
+
+html {
+  --brand-light: #4b4bff;
+
+  --text-1-light: var(--gray-8);
+  --text-2-light: var(--gray-7);
+
+  --surface-1-light: var(--gray-0);
+  --surface-2-light: var(--gray-1);
+  --surface-3-light: var(--gray-2);
+  --surface-4-light: var(--gray-3);
+}
+
+:root {
+  --brand: var(--brand-light);
+
+  --text-1: var(--text-1-light);
+  --text-2: var(--text-2-light);
+
+  --surface-1: var(--surface-1-light);
+  --surface-2: var(--surface-2-light);
+  --surface-3: var(--surface-3-light);
+  --surface-4: var(--surface-4-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --brand: var(--brand-dark);
+
+    --text-1: var(--text-1-dark);
+    --text-2: var(--text-2-dark);
+
+    --surface-1: var(--surface-1-dark);
+    --surface-2: var(--surface-2-dark);
+    --surface-3: var(--surface-3-dark);
+    --surface-4: var(--surface-4-dark);
+  }
+}
+
+@media (prefers-contrast: less) {
+  :root {
+    --brand: var(--brand-dim);
+
+    --text-1: var(--text-1-dim);
+    --text-2: var(--text-2-dim);
+
+    --surface-1: var(--surface-1-dim);
+    --surface-2: var(--surface-2-dim);
+    --surface-3: var(--surface-3-dim);
+    --surface-4: var(--surface-4-dim);
+  }
+}
+
+[color-scheme="purple"] {
+  --brand: var(--brand-purple);
+
+  --text-1: var(--text-1-purple);
+  --text-2: var(--text-2-purple);
+
+  --surface-1: var(--surface-1-purple);
+  --surface-2: var(--surface-2-purple);
+  --surface-3: var(--surface-3-purple);
+  --surface-4: var(--surface-4-purple);
+}
+
+html {
+  background-color: var(--surface-1);
+  color: var(--text-1);
+  accent-color: var(--link);
+}
+
+.surface-1 {
+  background-color: var(--surface-1);
+  color: var(--text-2);
+}
+
+.surface-2 {
+  background-color: var(--surface-2);
+  color: var(--text-2);
+}
+
+.surface-3 {
+  background-color: var(--surface-3);
+  color: var(--text-1);
+}
+
+.surface-4 {
+  background-color: var(--surface-4);
+  color: var(--text-1);
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+dt {
+  color: var(--text-1);
+}
+
+h5,
+h6,
+small,
+dd {
+  color: var(--text-2);
+}
