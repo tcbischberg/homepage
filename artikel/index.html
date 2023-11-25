@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" href="/assets/logo.svg" />
+  <link rel="stylesheet" href="https://unpkg.com/open-props" />
+  <link rel="stylesheet" href="https://unpkg.com/open-props/normalize.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/open-props/buttons.min.css" />
+  <link rel="stylesheet" href="index.css" />
+  <script src="https://unpkg.com/showdown/dist/showdown.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/path-browserify@1.0.1/index.min.js" defer></script>
+  <script src="index.js" type="module" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="/">
+      <img alt="Logo" src="/assets/logo.svg" class="header__logo" />
+      <nav class="header__navigation">
+        <a href="/aktuelles">Aktuelles</a>
+        <a href="/vereinswesen">Vereinswesen</a>
+        <a href="/mannschaften">Mannschaften</a>
+        <a href="/chronik">Chronik</a>
+      </nav>
+    </a>
+  </header>
+  <main>
+    <div class="content__success hidden">Erfolg</div>
+    <div class="content__loading">Lädt...</div>
+    <div class="content__error hidden">Fehler</div>
+  </main>
+  <footer class="footer">
+    <a href="/impressum">Impressum</a>
+    <span class="footer__link-separator">|</span>
+    <a href="/datenschutz">Datenschutz</a>
+  </footer>
+</body>
+
+</html>
