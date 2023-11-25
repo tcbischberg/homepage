@@ -7,21 +7,36 @@
   <link rel="stylesheet" href="https://unpkg.com/open-props/normalize.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/open-props/buttons.min.css" />
   <link rel="stylesheet" href="/index.css" />
+  <link rel="stylesheet" href="/global.css" />
 </head>
 
 <body>
   <header class="header">
     <a href="/">
       <img alt="Logo" src="/assets/logo.svg" class="header__logo" />
-      <nav class="header__navigation">
-        <a href="/aktuelles">Aktuelles</a>
-        <a href="/vereinswesen">Vereinswesen</a>
-        <a href="/mannschaften">Mannschaften</a>
-        <a href="/chronik">Chronik</a>
-      </nav>
     </a>
+
+    <input type="checkbox" id="navigation__drawer-checkbox" />
+    <label class="navigation__drawer-opener" for="navigation__drawer-checkbox">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <filter id="white-background">
+          <feDropShadow dx="0" dy="1" stdDeviation="0" flood-color="white" flood-opacity="0.5"></feDropShadow>
+        </filter>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="filter:url(#white-background)"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </label>
+    <label class="navigation__drawer-overlay" for="navigation__drawer-checkbox"></label>
+    <div class="navigation__drawer">
+      <nav class="navigation">
+        <a href="/aktuelles" class="navigation__item">Aktuelles</a>
+        <a href="/vereinswesen" class="navigation__item">Vereinswesen</a>
+        <a href="/mannschaften" class="navigation__item">Mannschaften</a>
+        <a href="/chronik" class="navigation__item">Chronik</a>
+      </nav>
+    </div>
   </header>
-  <main>
+  <main class="content__wrapper">
     <h1 class="content__title">
       Willkommen beim TC Blau-Weiß Bischberg e.&nbsp;V.
     </h1>
