@@ -38,36 +38,10 @@ function setState(newState, payload) {
   }
 }
 
-async function getContent(filename) {
-  const isHTML = posix.extname(filename ?? "") === ".html";
-  const isMarkdown = posix.extname(filename ?? "") === ".md";
-  if (!isHTML && !isMarkdown) {
-    setState(
-      "error",
-      `Expected a .md or a .html file, received "${filename}".`
-    );
-    return;
-  }
-
-  const url = `content/${filename}`;
-  return await fetch(url)
-    .then((res) => {
-      if (res.ok) return res;
-      setState("error", `Error while fetching resource: HTTP ${res.status}`);
-    })
-    .then((res) => res?.text())
-    .then((response) => {
-      if (!response) return;
-      if (isHTML) return response;
-
-      const converter = new showdown.Converter();
-      return converter.makeHtml(response);
-    })
-    .catch((error) => setState("error", String(error)));
-}
-
 await (async () => {
   const filename = getFilename();
-  const content = await getContent(filename);
-  if (content) setState("success", content);
+  const content = await fetchContent(filename, (error) =>
+    setState("error", error)
+  );
+  if (content) setState("success", content.html);
 })();

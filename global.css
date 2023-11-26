@@ -143,6 +143,7 @@ dd {
 h1 {
   font-size: 3rem;
   padding-inline: var(--size-2);
+  margin-block: var(--size-8);
 }
 
 h2 {
