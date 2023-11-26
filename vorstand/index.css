@@ -1,0 +1,10 @@
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: var(--size-2);
+  gap: var(--size-3);
+}
+
+.board-member__role {
+  font-weight: bold;
+}

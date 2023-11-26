@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" href="/assets/logo.svg" />
+  <link rel="stylesheet" href="https://unpkg.com/open-props" />
+  <link rel="stylesheet" href="https://unpkg.com/open-props/normalize.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/open-props/buttons.min.css" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="/global.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <a href="/" class="logo__link">
+        <img alt="Logo" src="/assets/logo.svg" class="logo__image" />
+      </a>
+    </div>
+
+    <input type="checkbox" id="navigation__drawer-checkbox" />
+    <label class="navigation__drawer-opener" for="navigation__drawer-checkbox">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <filter id="white-background">
+          <feDropShadow dx="0" dy="1" stdDeviation="0" flood-color="white" flood-opacity="0.5"></feDropShadow>
+        </filter>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="filter:url(#white-background)"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </label>
+    <label class="navigation__drawer-overlay" for="navigation__drawer-checkbox"></label>
+    <div class="navigation__drawer">
+      <nav class="navigation">
+        <a href="/aktuelles" class="navigation__item">Aktuelles</a>
+        <details class="navigation__item">
+          <summary>
+            Vereinswesen
+          </summary>
+          <a href="/vorstand" class="navigation__item">Vorstand und Ansprechpartner</a>
+        </details>
+        <a href="/mannschaften" class="navigation__item">Mannschaften</a>
+        <a href="/chronik" class="navigation__item">Chronik</a>
+      </nav>
+    </div>
+  </header>
+  <main class="content__wrapper">
+    <h1 class="content__title">
+      Unser Vorstand
+    </h1>
+    <div class="board">
+      <div class="board-member">
+        <div class="board-member__role">1. Vorsitzende</div>
+        <address>
+          <div class="board-member__name">Maria Metzner</div>
+          <div class="board-member__phone"><a href="tel:01716874256">0171&nbsp;6874256</a></div>
+          <div class="board-member__address">Schulstraße 41</div>
+          <div class="board-member__city">96120 Bischberg</div>
+          <a href="mailto:vorstand@tcbischberg.de">Email</a>
+        </address>
+      </div>
+      <div class="board-member">
+        <div class="board-member__role">2. Vorsitzender</div>
+        <address>
+          <div class="board-member__name">Nicolas Kennemann</div>
+          <div class="board-member__phone"><a href="tel:015788361431">0157&nbsp;88361431</a></div>
+          <div class="board-member__address">Trosdorfer Weg 12</div>
+          <div class="board-member__city">96120 Bischberg</div>
+          <a href="mailto:vorstand@tcbischberg.de">Email</a>
+        </address>
+      </div>
+      <div class="board-member">
+        <div class="board-member__role">3. Vorsitzende</div>
+        <address>
+          <div class="board-member__name">Bärbel Knöffel</div>
+          <div class="board-member__phone"><a href="tel:01709887937">0170&nbsp;9887937</a></div>
+          <div class="board-member__address">Mühlleite 5</div>
+          <div class="board-member__city">96191 Viereth</div>
+          <a href="mailto:vorstand@tcbischberg.de">Email</a>
+        </address>
+      </div>
+    </div>
+    <h1 class="content__title">
+      Erweiterter Vorstand
+    </h1>
+    <div class="board">
+      <div class="board-member">
+        <div class="board-member__role">Schriftführerin</div>
+        <address>
+          <div class="board-member__name">Carmen Schwappach</div>
+          <div class="board-member__phone"><a href="tel:095162918">0951&nbsp;62918</a></div>
+          <div class="board-member__phone"><a href="tel:01797898837">0179&nbsp;7898837</a></div>
+          <div class="board-member__address"></div>
+          <div class="board-member__city"></div>
+        </address>
+      </div>
+      <div class="board-member">
+        <div class="board-member__role">Sportwartin Erwachsene</div>
+        <address>
+          <div class="board-member__name">Carmen Schwappach</div>
+          <div class="board-member__phone"><a href="tel:095162918">0951&nbsp;62918</a></div>
+          <div class="board-member__phone"><a href="tel:01797898837">0179&nbsp;7898837</a></div>
+          <div class="board-member__address"></div>
+          <div class="board-member__city"></div>
+        </address>
+      </div>
+      <div class="board-member">
+        <div class="board-member__role">Jugendsportwarte</div>
+        <address>
+          <div class="board-member__name">Matthias Peetz</div>
+          <div class="board-member__name">Catarina Göller</div>
+          <div class="board-member__phone"></div>
+          <div class="board-member__address"></div>
+          <div class="board-member__city"></div>
+        </address>
+      </div>
+      <div class="board-member">
+        <div class="board-member__role">Kassiererin</div>
+        <address>
+          <div class="board-member__name">Elvira Bernreuther</div>
+          <div class="board-member__phone"><a href="tel:095169190">0951&nbsp;69190</a></div>
+          <div class="board-member__address"></div>
+          <div class="board-member__city"></div>
+        </address>
+      </div>
+      <div class="board-member">
+        <div class="board-member__role">Vergnügungswartinnen</div>
+        <address>
+          <div class="board-member__name">Monika Starke</div>
+          <div class="board-member__phone"><a href="tel:095166977">0951&nbsp;66977</a></div>
+          <div class="board-member__phone"><a href="tel:01703077716">0170&nbsp;3077716</a></div>
+          <div class="board-member__address"></div>
+          <div class="board-member__city"></div>
+          <div class="board-member__name">Martina Hoffmann</div>
+        </address>
+      </div>
+      <div class="board-member">
+        <div class="board-member__role">Hüttenwart</div>
+        <address>
+          <div class="board-member__name">Harald Schlauch</div>
+          <div class="board-member__phone"><a href="tel:095166977">09503&nbsp;504777</a></div>
+          <div class="board-member__phone"><a href="tel:01703077716">0175&nbsp;2640541</a></div>
+          <div class="board-member__address"></div>
+          <div class="board-member__city"></div>
+        </address>
+      </div>
+      <div class="board-member">
+        <div class="board-member__role">Platzwart</div>
+        <address>
+          <div class="board-member__name">Dieter Knöffel</div>
+          <div class="board-member__phone"></div>
+          <div class="board-member__address"></div>
+          <div class="board-member__city"></div>
+        </address>
+      </div>
+      <div class="board-member">
+        <div class="board-member__role">Schiedsrichterobmann</div>
+        <address>
+          <div class="board-member__name">Thomas Metzner</div>
+          <div class="board-member__phone"><a href="tel:095166999">0951&nbsp;66999</a></div>
+          <div class="board-member__phone"><a href="tel:0171146600">0171&nbsp;146600</a></div>
+          <div class="board-member__address"></div>
+          <div class="board-member__city"></div>
+        </address>
+      </div>
+      <div class="board-member">
+        <div class="board-member__role">Kassenprüfer</div>
+        <address>
+          <div class="board-member__name">Jürgen Starke</div>
+          <div class="board-member__name">Henk Klaasen</div>
+          <div class="board-member__phone"></div>
+          <div class="board-member__address"></div>
+          <div class="board-member__city"></div>
+        </address>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <a href="/impressum">Impressum</a>
+    <span class="footer__link-separator">|</span>
+    <a href="/datenschutz">Datenschutz</a>
+  </footer>
+</body>
+
+</html>

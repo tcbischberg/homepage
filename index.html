@@ -12,9 +12,11 @@
 
 <body>
   <header class="header">
-    <a href="/">
-      <img alt="Logo" src="/assets/logo.svg" class="header__logo" />
-    </a>
+    <div class="header__logo">
+      <a href="/" class="logo__link">
+        <img alt="Logo" src="/assets/logo.svg" class="logo__image" />
+      </a>
+    </div>
 
     <input type="checkbox" id="navigation__drawer-checkbox" />
     <label class="navigation__drawer-opener" for="navigation__drawer-checkbox">
@@ -30,7 +32,12 @@
     <div class="navigation__drawer">
       <nav class="navigation">
         <a href="/aktuelles" class="navigation__item">Aktuelles</a>
-        <a href="/vereinswesen" class="navigation__item">Vereinswesen</a>
+        <details class="navigation__item">
+          <summary>
+            Vereinswesen
+          </summary>
+          <a href="/vorstand" class="navigation__item">Vorstand und Ansprechpartner</a>
+        </details>
         <a href="/mannschaften" class="navigation__item">Mannschaften</a>
         <a href="/chronik" class="navigation__item">Chronik</a>
       </nav>
