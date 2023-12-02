@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" href="/assets/logo.svg" />
+  <link rel="stylesheet" href="https://unpkg.com/open-props" />
+  <link rel="stylesheet" href="https://unpkg.com/open-props/normalize.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/open-props/buttons.min.css" />
+  <link rel="stylesheet" href="/global.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <a href="/" class="logo__link">
+        <img alt="Logo" src="/assets/logo.svg" class="logo__image" />
+      </a>
+    </div>
+
+    <input type="checkbox" id="navigation__drawer-checkbox" />
+    <label class="navigation__drawer-opener" for="navigation__drawer-checkbox">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <filter id="white-background">
+          <feDropShadow dx="0" dy="1" stdDeviation="0" flood-color="white" flood-opacity="0.5"></feDropShadow>
+        </filter>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="filter:url(#white-background)"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </label>
+    <label class="navigation__drawer-overlay" for="navigation__drawer-checkbox"></label>
+    <div class="navigation__drawer">
+      <nav class="navigation">
+        <a href="/aktuelles" class="navigation__item">Aktuelles</a>
+        <details class="navigation__item">
+          <summary>
+            Vereinswesen
+          </summary>
+          <a href="/vorstand" class="navigation__item">Vorstand und Ansprechpartner</a>
+          <a href="/satzung/arbeitsdienst" class="navigation__item">Arbeitsdienst</a>
+        </details>
+        <a href="/mannschaften" class="navigation__item">Mannschaften</a>
+        <a href="/chronik" class="navigation__item">Chronik</a>
+      </nav>
+    </div>
+  </header>
+  <main class="content__wrapper">
+    <h1 id="finanz-und-beitragsordnung">Finanz- und Beitragsordnung</h1>
+    <p>Gültig ab 01.01.2021</p>
+    <h2 id="1-mitgliedsbeitr-ge">1. Mitgliedsbeiträge</h2>
+    <h3 id="1-1-einzelmitglieder-beitrag-j-hrlich">1.1 Einzelmitglieder Beitrag jährlich</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Mitgliedsart</th>
+          <th>Jahresbeitrag</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Kinder unter 12 J.</td>
+          <td>50,00 €</td>
+        </tr>
+        <tr>
+          <td>Kinder/Jugendliche unter 18 J.</td>
+          <td>75.00 €</td>
+        </tr>
+        <tr>
+          <td>Erwachsene ab 18 J.</td>
+          <td>130,00 €</td>
+        </tr>
+        <tr>
+          <td>Passive Mitglieder</td>
+          <td>40,00 €</td>
+        </tr>
+        <tr>
+          <td>Ehrenvorstände und Ehrenmitglieder</td>
+          <td>beitragsfrei</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3 id="1-2-familienmitgliedschaft-einschl-kinder-unter-18-jahren-">1.2 Familienmitgliedschaft (einschl. Kinder
+      unter 18 Jahren)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Mitgliedsart</th>
+          <th>Jahresbeitrag</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ehepaare bzw. Paare eheähnlicher Lebensgemeinschaften</td>
+          <td>190,00 €</td>
+        </tr>
+        <tr>
+          <td>Alleinerziehende mit einem Kind unter 18 J.</td>
+          <td>160,00 €</td>
+        </tr>
+        <tr>
+          <td>Ehepaare passiv</td>
+          <td>60,00 €</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Der ermäßigte Beitrag für Kinder bzw. Jugendliche im Rahmen einer Familienmitgliedschaft gilt nur, wenn
+      mindestens eine Vollmitgliedschaft besteht.</p>
+    <h3 id="1-3-erm-igter-beitrag">1.3 Ermäßigter Beitrag</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Mitgliedsart</th>
+          <th>Jahresbeitrag</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>In Ausbildung befindliche Mitglieder, Schüler, Studenten (jeweils bis 27 Jahre) sowie Wehrpflichtige bzw.
+            Zivildienstleistende</td>
+          <td>Einzelmitglied 75,00 €</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2 id="2-arbeitsdienst-pro-saison-abzuleisten-">2. Arbeitsdienst (pro Saison abzuleisten)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Mitgliedsart</th>
+          <th>Arbeitsdienst</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Für Jugendliche (15 bis 18 Jahren)</td>
+          <td>4 Stunden</td>
+        </tr>
+        <tr>
+          <td>Alle Mitglieder (außer passive Mitglieder) ab 18 Jahren</td>
+          <td>8 Stunden</td>
+        </tr>
+        <tr>
+          <td>Bei Ehepaaren oder Paaren in eheähnlicher Lebensgemeinschaft</td>
+          <td>12 Stunden</td>
+        </tr>
+        <tr>
+          <td>Ab einem Alter von 75 Jahren</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Ehrenvorstände und Ehrenmitglieder</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Für Familien mit Kindern bis 18 Jahren gilt eine maximale Höchstgrenze von 20 Stunden.</p>
+    <p>Nicht geleistete Arbeitsstunden werden mit je 13,00 € belastet.</p>
+    <p>Gelegenheit zur Ableistung des Arbeitsdienstes besteht während der Saison in Absprache mit dem Platzwart bzw. 1.
+      Vorsitzenden.</p>
+    <h3 id="2-1-definition-arbeitsstunden-i-d-f-v-23-01-2010-">2.1 Definition Arbeitsstunden (i.d.F.v. 23.01.2010)</h3>
+    <p>Folgende Klarstellung zur Satzung wurden durch den Ausschuss und die Jahreshauptversammlung am 23.01.2010
+      beschlossen und in Kraft gesetzt:</p>
+    <p>Wie in der Satzung unter Beitrittsbedingungen festgeschrieben, sind Arbeitsstunden von allen aktiven Mitgliedern
+      ab 15 Jahre zu leisten.
+      Der Vereinsausschuss stellt klar, dass damit verbunden auch das Mindestalter für die Leistungsverpflichteten 15
+      Jahre sein muss.
+      Damit soll vermieden werden, dass Kinder für Arbeiten auf der Sportanlage eingeteilt werden, die ihnen nicht
+      gerecht werden.</p>
+    <p>Als Arbeitsstunden anerkannt werden:</p>
+    <ul>
+      <li>Pflege und Reinigung der Platzanlage, der Platzeingrenzung (Hecken, Zäune)</li>
+      <li>Pflege Reinigung des Vereinsheims und der Duschen</li>
+      <li>Erhaltungsarbeiten für die Anlage und der Einrichtung</li>
+      <li>Arbeiten vor Platzeröffnung (Plätze bestellen, Windschutz aufhängen, Bänke streichen und aufstelle,
+        Wasserinstallation)</li>
+      <li>Saisonabschluss (Linien abdecken, Netze und Windschutz abbauen, Wasser abstellen)</li>
+      <li>Trainingsstunden für Kinder und Jugendliche (Org. und zielgerichtete Durchführung von Übungen)</li>
+    </ul>
+    <p>Nicht gemeint ist Beaufsichtigung der Kinder während des Trainings, da dort oft die Eltern der trainierenden
+      Kinder sowieso anwesend sind.
+      Eine Vergütung in Form einer Anrechnung auf Arbeitsstunden ist hier nicht möglich.
+      Die &quot;Übungsleitung&quot; ist mit dem Jugendwart abzustimmen.</p>
+    <p>Bitte beachten Sie, dass die Aufzählung der Orientierung dient, und nicht abschließend ist.</p>
+    <p>Die Funktionsträger im Ausschuss müssen neben ihrer übernommenen Funktion keine weiteren Arbeitsstunden leisten.
+    </p>
+    <p>Falls ein Funktionsträger innerhalb seines Aufgabengebietes mehr als seine acht vorgeschriebenen Arbeitsstunden
+      leistet
+      und auch aktive(r) Spieler(in) ist, können die mehr geleisteten Stunden nicht übertragen werden.</p>
+    <h4 id="beispiel">Beispiel</h4>
+    <p>Vorstand, Platzwart und Hüttenwart (Familienmitgliedschaft) leisten jeweils zwanzig Stunden.
+      Ein Übertrag auf Ehepartner ist nicht möglich.
+      Die Funktionsträger können jedoch außerhalb ihrer Funktion weitere Stunden arbeiten und diese dann für die
+      Familienmitgliedschaft anrechnen lassen,
+      z. B. wenn der Kassierer oder Schriftführer noch Rasen mäht oder Hecke schneidet.</p>
+    <p>Die Kassenprüfer erhalten 3 Stunden Zeit für die Kassenprüfung als Arbeitsstunden anerkannt.</p>
+    <p>Jeder Spieler hat die Möglichkeit seine Arbeitsstunden zu leisten.
+      Die Arbeitsdienste werden entweder im Mitteilungsblatt oder per Mail angekündigt oder können mit dem Vorstand oder
+      Platzwart abgestimmt werden.</p>
+    <p>Da erfahrungsgemäß vor der Saison und bis Ende August die meisten Arbeiten anfallen, kann ab September nicht mehr
+      damit gerechnet werden,
+      dass noch genügend Arbeit zu verrichten ist, um alle Stunden abarbeiten zu können.
+      Zwar ist die Anlage noch winterfest zu machen, aber das ist meist nach zwei Stunden erledigt.</p>
+    <p>Ab 2010 müssen bis Ende Aug. die Arbeitsstunden des laufenden Jahres überwiegend geleistet sein.
+      Andernfalls müssen die nicht mehr leistbaren gemäß Satzung bezahlt werden.</p>
+    <p>Nicht geleistete Arbeitsstunden können im Folgejahr nicht nachgeholt werden.</p>
+    <p>Bitte unterstützen Sie Ihren TC Bischberg.</p>
+    <p>Bei den jetzigen Mitgliedsbeiträgen ist der Verein auf die Eigenleistungen der Mitglieder oder die Vergütung
+      angewiesen.</p>
+    <h2 id="3-erg-nzende-hinweise">3. Ergänzende Hinweise</h2>
+    <p>Es wird ausdrücklich auf § 7 der Satzung hingewiesen, wonach das Spielrecht erst mit der Begleichung der
+      Beitragsrechnung entsteht.</p>
+    <h2 id="4-gastspieler">4. Gastspieler</h2>
+    <p>Gastspieler sind nur in Verbindung mit einem Vereinsmitglied spielberechtigt.
+      Beim Kauf der Wertmarke in der Esso-Tankstelle (Fam. Noll), Hauptstraße, Bischberg, sind pro Person 5,00 € zu
+      zahlen.</p>
+    <p>Wird keine Marke gekauft und stattdessen der Gastspieler zum Spieler in die Eintragungsliste eingeschrieben, sind
+      pro Person 6,00 € zu leisten.
+      Diese werden vom Kassier im Folgemonat vom Girokonto des Mitglieds abgebucht.</p>
+    <p>Gastspieler sind immer namentlich in den ausgehängten Platzreservierungsplan einzutragen.
+      Falls eine Marke geklebt wird, ist der Name des Gastes darüber zu schreiben.
+      Ein Gastspieler ist nur mit einem volljährigen Vereinsmitglied und höchstens fünfmal spielberechtigt.</p>
+    <p>Das Schlüsselpfand beträgt seit 01.01.2007 fünf Euro.</p>
+    <p>Die Platz- und Spielordnung (siehe Anhang im Kasten am Clubhaus!) sowie die Gastspielordnung sind zu beachten.
+    </p>
+    <h2 id="5-passive-mitglieder">5. Passive Mitglieder</h2>
+    <p>Passive Mitglieder sind solche, die die sportliche Einrichtung des Vereins nicht beanspruchen, sich diesem aber
+      verbunden fühlen.
+      Wenn ein passives Mitglied am Spielbetrieb teilnehmen will, kann es bis zu fünfmal mit einem aktiven Mitglied,
+      egal welches Alter, als Gast spielen.
+      Nichtmitglieder dürfen weiterhin nur mit volljährigen aktiven Mitgliedern bis zu fünfmal spielen.</p>
+    <p>1. Vorsitzender TC Blau-Weiß Bischberg 1980 e.V.</p>
+    <p>gez. Peter Nepf</p>
+  </main>
+  <footer class="footer">
+    <a href="/impressum">Impressum</a>
+    <span class="footer__link-separator">|</span>
+    <a href="/datenschutz">Datenschutz</a>
+    <span class="footer__link-separator">|</span>
+    <a href="/anfahrt">Anfahrt</a>
+  </footer>
+</body>
+
+</html>
