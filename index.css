@@ -2,10 +2,6 @@ details > .navigation__item {
   margin-inline-start: var(--size-2);
 }
 
-.content__wrapper > * {
-  margin: var(--size-fluid-2);
-}
-
 .content__title {
   max-inline-size: 100%;
   text-align: center;
