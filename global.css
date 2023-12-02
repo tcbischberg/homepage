@@ -131,6 +131,7 @@ h4,
 p,
 dt {
   color: var(--text-1);
+  margin-block: var(--size-4);
 }
 
 h5,
@@ -149,6 +150,7 @@ h1 {
 h2 {
   font-size: 2rem;
   padding-inline: var(--size-2);
+  margin-block: var(--size-7);
 }
 
 html {
@@ -162,6 +164,7 @@ body {
 
 main {
   flex-grow: 1;
+  padding-inline: var(--size-fluid-1);
   padding-block-end: var(--size-8);
 }
 
@@ -211,7 +214,7 @@ main {
 
 .navigation__drawer {
   inset: 0 auto 0 0;
-  max-width: calc(100vw - var(--size-8));
+  max-width: 80vw;
   padding: var(--size-fluid-1) var(--size-fluid-2);
   background: var(--surface-2);
   position: fixed;
@@ -236,6 +239,9 @@ main {
 .navigation__item {
   color: inherit;
   text-decoration: none;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .footer {
