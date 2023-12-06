@@ -248,6 +248,16 @@ main {
   text-overflow: ellipsis;
 }
 
+.become-member {
+  background: var(--brand);
+  color: var(--text-1);
+  padding: var(--size-1) var(--size-2);
+  margin-block-start: var(--size-2);
+  border-radius: var(--radius-2);
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .footer {
   display: flex;
   padding-inline: var(--size-fluid-2);
