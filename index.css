@@ -12,3 +12,14 @@ details > .navigation__item {
   box-shadow: var(--shadow-4);
   border-radius: var(--radius-3);
 }
+
+.sponsor {
+  display: flex;
+  justify-content: center;
+  margin-block: var(--size-4);
+}
+
+.sponsor__image {
+  width: 60vw;
+  object-fit: cover;
+}

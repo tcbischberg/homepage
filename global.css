@@ -169,6 +169,7 @@ main {
 }
 
 .header {
+  position: relative;
   display: flex;
   align-items: start;
   justify-content: space-between;
@@ -198,6 +199,9 @@ main {
 }
 
 .navigation__drawer-opener {
+  position: absolute;
+  top: 0;
+  right: 0;
   margin: var(--size-4) var(--size-4) 0 0;
   width: var(--size-8);
   cursor: pointer;
