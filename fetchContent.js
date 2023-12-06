@@ -1,9 +1,9 @@
 /**
- * @param {string} html
+ * @param {string} htmlText
  */
-function parseHtml(html) {
+function parseHtml(htmlText) {
   const dummyEl = document.createElement("html");
-  dummyEl.innerHTML = html;
+  dummyEl.innerHTML = htmlText;
 
   const metaEls = [...dummyEl.querySelectorAll("meta")];
   const metadata = metaEls.reduce(
@@ -34,7 +34,7 @@ function parseMarkdown(markdown) {
 /**
  * @param {string} filename
  */
-async function fetchContent(filename, onError = () => {}) {
+export async function fetchContent(filename, onError = () => {}) {
   if (!window.showdown) {
     onError("Missing import for showdown");
   }
@@ -50,6 +50,7 @@ async function fetchContent(filename, onError = () => {}) {
   return await fetch(url)
     .then((res) => {
       if (res.ok) return res;
+      if (res.status === 404) onError("Der Artikel wurde nicht gefunden.");
       onError(`Error while fetching resource: HTTP ${res.status}`);
     })
     .then((res) => res?.text())

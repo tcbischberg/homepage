@@ -1,3 +1,5 @@
+import { fetchContent } from "/fetchContent.js";
+
 function getFilename() {
   const params = new URL(location.href).searchParams;
   return params.get("datei");
@@ -40,6 +42,9 @@ function setState(newState, payload) {
 
 await (async () => {
   const filename = getFilename();
+  if (!filename) {
+    setState("error", "Es wurde keine Datei angegeben.");
+  }
   const content = await fetchContent(filename, (error) =>
     setState("error", error)
   );

@@ -7,6 +7,12 @@ details > .navigation__item {
   text-align: center;
 }
 
+.content__eye-catcher {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
 .sponsors {
   max-inline-size: 100%;
   box-shadow: var(--shadow-4);

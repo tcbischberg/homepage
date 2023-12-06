@@ -165,7 +165,7 @@ body {
 main {
   flex-grow: 1;
   padding-inline: var(--size-fluid-1);
-  padding-block-end: var(--size-8);
+  padding-block: var(--size-8);
 }
 
 .header {
