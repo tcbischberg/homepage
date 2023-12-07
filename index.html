@@ -1,101 +1,221 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
+  <head>
+    <title>TC Blau-Weiß Bischberg e. V.</title>
+    <link rel="icon" href="/assets/logo.svg" />
+    <link rel="stylesheet" href="https://unpkg.com/open-props" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/open-props/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/open-props/buttons.min.css"
+    />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/global.css" />
+  </head>
 
-<head>
-  <link rel="icon" href="/assets/logo.svg" />
-  <link rel="stylesheet" href="https://unpkg.com/open-props" />
-  <link rel="stylesheet" href="https://unpkg.com/open-props/normalize.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/open-props/buttons.min.css" />
-  <link rel="stylesheet" href="/index.css" />
-  <link rel="stylesheet" href="/global.css" />
-</head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <a href="/" class="logo__link">
+          <img alt="Logo" src="/assets/logo.svg" class="logo__image" />
+        </a>
+      </div>
 
-<body>
-  <header class="header">
-    <div class="header__logo">
-      <a href="/" class="logo__link">
-        <img alt="Logo" src="/assets/logo.svg" class="logo__image" />
-      </a>
-    </div>
-
-    <input type="checkbox" id="navigation__drawer-checkbox" />
-    <label class="navigation__drawer-opener" for="navigation__drawer-checkbox">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-        <filter id="white-background">
-          <feDropShadow dx="0" dy="1" stdDeviation="0" flood-color="white" flood-opacity="0.5"></feDropShadow>
-        </filter>
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="filter:url(#white-background)"
-          d="M4 6h16M4 12h16M4 18h16"></path>
-      </svg>
-    </label>
-    <label class="navigation__drawer-overlay" for="navigation__drawer-checkbox"></label>
-    <div class="navigation__drawer">
-      <nav class="navigation">
-        <a href="/assets/Aufnahmeantrag.pdf" target="_blank" class="navigation__item become-member">Werde Mitglied!</a>
-        <a href="/aktuelles" class="navigation__item">Aktuelles</a>
-        <details class="navigation__item">
-          <summary>
-            Vereinswesen
-          </summary>
-          <a href="/vorstand" class="navigation__item">Vorstand und Ansprechpartner</a>
-          <a href="/satzung/arbeitsdienst" class="navigation__item">Arbeitsdienst</a>
-          <a href="/satzung/beitragsordnung" class="navigation__item">Beitragsordnung</a>
-          <a href="/satzung/platzordnung" class="navigation__item">Platzordnung</a>
-        </details>
-        <a href="/mannschaften" class="navigation__item">Mannschaften</a>
-        <details class="navigation__item">
-          <summary>
-            Archiv
-          </summary>
-          <a href="/artikel/index.html?datei=kurzchronik.md" class="navigation__item">Kurzchronik</a>
-          <a href="/artikel/index.html?datei=rueckblick/2020.md" class="navigation__item">Rückblick 2020</a>
-        </details>
-      </nav>
-    </div>
-  </header>
-  <main class="content__wrapper">
-    <img alt="Die Anlage" src="/assets/background.jpg" class="content__eye-catcher" />
-    <h1 class="content__title">
-      Willkommen beim TC Blau-Weiß Bischberg e.&nbsp;V.
-    </h1>
-    <img alt="Die neue Überdachung" src="/assets/ueberdachung.jpg" class="content__eye-catcher" />
-    <div class="sponsors">
-      <h2>Vielen Dank an unsere Sponsoren und Partner</h2>
-      <span class="sponsors__description">Wir freuen uns über jede Unterstützung! Wenn auch Sie Interesse haben, den
-        Verein zu unterstützen, wenden Sie sich gerne an unsere
-        Vorstandschaft.</span>
-      <div class="sponsor-items">
-        <div class="sponsor">
-          <a href="https://kuechen-hummel.de" target="_blank" class="sponsor__link"><img class="sponsor__image"
-              alt="Logo von Küchen Hummel" src="/assets/sponsors/kuechen-hummel.webp" /></a>
-        </div>
-        <div class="sponsor">
-          <a href="https://leben-ist-bewegen.info/" target="_blank" class="sponsor__link"><img class="sponsor__image"
-              alt="Logo von Leben ist bewegen" src="/assets/sponsors/leben-ist-bewegen.jpg" /></a>
-        </div>
-        <div class="sponsor">
-          <a href="https://www.malerbetrieb-foertsch.de/" target="_blank" class="sponsor__link"><img
-              class="sponsor__image" alt="Logo von Malerbetrieb Förtsch"
-              src="/assets/sponsors/malerbetrieb-foertsch.png" /></a>
-        </div>
-        <div class="sponsor">
-          <a href="https://www.spielwarengigant.com" target="_blank" class="sponsor__link"><img class="sponsor__image"
-              alt="Logo von Spielwarengigant" src="/assets/sponsors/spielwarengigant.jpg" /></a>
-        </div>
-        <div class="sponsor">
-          <a href="https://sport-wittke.de/" target="_blank" class="sponsor__link"><img class="sponsor__image"
-              alt="Logo von Sport Wittke" src="/assets/sponsors/sport-wittke.png" /></a>
+      <input type="checkbox" id="navigation__drawer-checkbox" />
+      <label
+        class="navigation__drawer-opener"
+        for="navigation__drawer-checkbox"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <filter id="white-background">
+            <feDropShadow
+              dx="0"
+              dy="1"
+              stdDeviation="0"
+              flood-color="white"
+              flood-opacity="0.5"
+            ></feDropShadow>
+          </filter>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            style="filter: url(#white-background)"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+      </label>
+      <label
+        class="navigation__drawer-overlay"
+        for="navigation__drawer-checkbox"
+      ></label>
+      <div class="navigation__drawer">
+        <nav class="navigation">
+          <a
+            href="/assets/Aufnahmeantrag.pdf"
+            target="_blank"
+            class="navigation__item become-member"
+          >
+            Werde Mitglied!
+          </a>
+          <a href="/aktuelles" class="navigation__item">Aktuelles</a>
+          <details class="navigation__item">
+            <summary>Vereinswesen</summary>
+            <ul class="">
+              <li>
+                <a href="/vorstand" class="navigation__item">
+                  Vorstand und Ansprechpartner
+                </a>
+              </li>
+              <li>
+                <a href="/satzung/arbeitsdienst" class="navigation__item">
+                  Arbeitsdienst
+                </a>
+              </li>
+              <li>
+                <a href="/satzung/beitragsordnung" class="navigation__item">
+                  Beitragsordnung
+                </a>
+              </li>
+              <li>
+                <a href="/satzung/platzordnung" class="navigation__item">
+                  Platzordnung
+                </a>
+              </li>
+            </ul>
+          </details>
+          <details class="navigation__item">
+            <summary>Archiv</summary>
+            <ul>
+              <li>
+                <a
+                  href="/artikel/index.html?datei=kurzchronik.md"
+                  class="navigation__item"
+                >
+                  Kurzchronik
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/artikel/index.html?datei=rueckblick/2020.md"
+                  class="navigation__item"
+                >
+                  Rückblick 2020
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/artikel/index.html?datei=rueckblick/2019.md"
+                  class="navigation__item"
+                >
+                  Rückblick 2019
+                </a>
+              </li>
+            </ul>
+          </details>
+          <a href="/mannschaften" class="navigation__item">Mannschaften</a>
+        </nav>
+      </div>
+    </header>
+    <main class="content__wrapper">
+      <img
+        alt="Die Anlage"
+        src="/assets/background.jpg"
+        class="content__eye-catcher"
+      />
+      <h1 class="content__title">
+        Willkommen beim TC Blau-Weiß Bischberg e.&nbsp;V.
+      </h1>
+      <img
+        alt="Die neue Überdachung"
+        src="/assets/ueberdachung.jpg"
+        class="content__eye-catcher"
+      />
+      <div class="sponsors">
+        <h2>Vielen Dank an unsere Sponsoren und Partner</h2>
+        <span class="sponsors__description">
+          Wir freuen uns über jede Unterstützung! Wenn auch Sie Interesse haben,
+          den Verein zu unterstützen, wenden Sie sich gerne an unsere
+          Vorstandschaft.
+        </span>
+        <div class="sponsor-items">
+          <div class="sponsor">
+            <a
+              href="https://kuechen-hummel.de"
+              target="_blank"
+              class="sponsor__link"
+            >
+              <img
+                class="sponsor__image"
+                alt="Logo von Küchen Hummel"
+                src="/assets/sponsors/kuechen-hummel.webp"
+              />
+            </a>
+          </div>
+          <div class="sponsor">
+            <a
+              href="https://leben-ist-bewegen.info/"
+              target="_blank"
+              class="sponsor__link"
+            >
+              <img
+                class="sponsor__image"
+                alt="Logo von Leben ist bewegen"
+                src="/assets/sponsors/leben-ist-bewegen.jpg"
+              />
+            </a>
+          </div>
+          <div class="sponsor">
+            <a
+              href="https://www.malerbetrieb-foertsch.de/"
+              target="_blank"
+              class="sponsor__link"
+            >
+              <img
+                class="sponsor__image"
+                alt="Logo von Malerbetrieb Förtsch"
+                src="/assets/sponsors/malerbetrieb-foertsch.png"
+              />
+            </a>
+          </div>
+          <div class="sponsor">
+            <a
+              href="https://www.spielwarengigant.com"
+              target="_blank"
+              class="sponsor__link"
+            >
+              <img
+                class="sponsor__image"
+                alt="Logo von Spielwarengigant"
+                src="/assets/sponsors/spielwarengigant.jpg"
+              />
+            </a>
+          </div>
+          <div class="sponsor">
+            <a
+              href="https://sport-wittke.de/"
+              target="_blank"
+              class="sponsor__link"
+            >
+              <img
+                class="sponsor__image"
+                alt="Logo von Sport Wittke"
+                src="/assets/sponsors/sport-wittke.png"
+              />
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
-  <footer class="footer">
-    <a href="/impressum">Impressum</a>
-    <span class="footer__link-separator">|</span>
-    <a href="/datenschutz">Datenschutz</a>
-    <span class="footer__link-separator">|</span>
-    <a href="/anfahrt">Anfahrt</a>
-  </footer>
-</body>
-
+    </main>
+    <footer class="footer">
+      <a href="/impressum">Impressum</a>
+      <span class="footer__link-separator">|</span>
+      <a href="/datenschutz">Datenschutz</a>
+      <span class="footer__link-separator">|</span>
+      <a href="/anfahrt">Anfahrt</a>
+    </footer>
+  </body>
 </html>

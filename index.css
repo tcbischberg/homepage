@@ -22,7 +22,13 @@ details > .navigation__item {
 .sponsor {
   display: flex;
   justify-content: center;
-  margin-block: var(--size-4);
+  margin: var(--size-4) auto;
+}
+
+@media (min-width: 768px) {
+  .sponsor {
+    width: 40%;
+  }
 }
 
 .sponsor__image {
